@@ -4,7 +4,9 @@
   "description": "Gulp plugin to convert to or from JSON, YAML, XML, PLIST or CSV.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -23,10 +25,12 @@
   "dependencies": {
     "gulp-util": "~2.2.0",
     "event-stream": "~3.0.20",
-    "data-convert": "~0.0.1"
+    "data-convert": "~0.0.1",
+    "snyk": "^1.104.2"
   },
   "devDependencies": {
     "mocha": "~1.16.1",
     "should": "~2.1.1"
-  }
+  },
+  "snyk": true
 }
